@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Roșca Mircea">
+    <meta name="keywords" content="Arhitectura, Design Interior, Design Exterior, Design urban, Design peisagist,">
+    <meta name="description" content="Portofoliul profesional al lui Eirik Arnesen, împreună cu toate lucrările sale">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Eirik Arnesen</title>
+    <style>
+      * {
+        font-family: 'Ubuntu', sans-serif;
+      }
+    
+      .nav-link {
+        color: whitesmoke;
+        font-size: 30px;
+      }
+    
+      .nav-link:hover {
+        color: red;
+        transition: 0.3s;
+        transform: scale(1.2);
+    
+      }
+    
+      .navbar-brand {
+        font-size: 40px;
+        color: whitesmoke;
+      }
+    
+      .dark-bg {
+        background-image: linear-gradient(rgb(0, 0, 0, .9), rgb(0, 0, 0, .9)), url('poze/hero-image.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+      }
+    
+      #avantaje .container {
+        height: 50vh;
+      }
+    
+      .generic {
+        padding: 100px 0;
+      }
+    
+      .c-item {
+        height: 600px;
+    
+      }
+    
+      .c-img {
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.4)
+      }
+    
+      .card {
+        transition: all 0.3s;
+      }
+    
+      .card:hover {
+        transform: scale(1.15)
+      }
+    
+      .containerGallery {
+        position: relative;
+      }
+    
+      .imageGallery {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    
+      .containerGallery:hover .overlayGallery {
+        opacity: 1;
+      }
+    
+      .overlayGallery {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    
+      .textGallery {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    </style>
+    </head>
+    
+    <body>
+      <header id="header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3">
+          <div class="container">
+            <h1 class="navbar-brand">
+              <a class="nav-link" href="index.html">
+                <img src="logo.png" alt="Logo-ul firmei lui Eirik Arnesen">Eirik Arnesen</a>
+            </h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="#Despre-Mine">Despre mine</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#lucrari">Lucrări</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#avantaje">Beneficii</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    
+      <div id="hero-slider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="poze/architecture-.jpg" class="d-block w-100 c-img"
+              alt="Sufragerie modernă open space cu tematică albă">
+            <div class="carousel-caption  top-0 mt-5">
+              <p class="display-1 fw-bolder text-uppercase mt-5">Eirik Arnesen</p>
+              <p class="mt-3 fs-3">Arhitect, designer și inginer</p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="poze/bucatarie (1).jpg" class="d-block w-100 c-img"
+              alt="Bucătărie modernă realizată din lemn de stejar în combinație cu lemn abachi tropical.">
+            <div class="carousel-caption  top-0 mt-5">
+              <p class="display-1 fw-bolder text-uppercase mt-5">Arhitect de Interior</p>
+              <p class="mt-3 fs-3">Pentru cele mai moderne încăperi</p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="poze/exterior-3558996.jpg" class="d-block w-100 c-img"
+              alt="Imboil spațios modern, nuanță de fildeș, situat pe 3 nivele">
+            <div class="carousel-caption  top-0 mt-5">
+              <p class="display-1 fw-bolder text-uppercase mt-5">Arhitect de Exterior</p>
+              <p class="mt-3 fs-3">Pentru cele mai inovative locuințe</p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="poze/preturi.jpg" class="d-block w-100 c-img"
+              alt="Doi oameni ce negociază prețurile în legătura cu întocmirea unui serviciu">
+            <div class="carousel-caption  top-0 mt-5">
+              <p class="display-1 fw-bolder text-uppercase mt-5">Prețuri accesibile</p>
+              <p class="mt-3 fs-3">Cele mai bune servicii calitate preț</p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="poze/drawing-933207.jpg" class="d-block w-100 c-img"
+              alt="Desen tehnic realizat de Eirik Arnesen pentru întorcmirea unui deisgn interior">
+            <div class="carousel-caption  top-0 mt-5">
+              <p class="display-1 fw-bolder text-uppercase mt-5">Seriozitate și încredere</p>
+              <p class="mt-3 fs-3">Pentru cele mai bune lucrări, realizate mereu la timp</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-slider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-slider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+     
+      <section class="generic" id="Despre-Mine">
+        <div class="container">
+          <h2 class="display-3 text-danger text-uppercase"> Despre mine </h2>
+          <div class="row mb-3">
+            <div class="col-8 ">
+              <div class="d-flex h-100 flex-column justify-content-center">
+                <p class="lead">Eirik Arnesen (n. 1990), din Norvegia, și-a făcut studiile în arhitectură la <a
+                    class="text-danger"
+                    href="https://www.dida.unifi.it/index.php?module=CMpro&func=viewpage&pageid=362&newlang=eng"
+                    target="_blank">Academia de Arhitectură din Florența</a>, Italia, unde a studiat arhitectura.
+                  Accentul lui se pune pe amenajările interioare și scopul este de a produce lucrări atent gândite cu cele
+                  mai bune materiale pentru a satisface nevoile clientului.
+                  Eirik lucrează în prezent ca instructor principal de arhitectură la Academia de Arhitectură din
+                  Florența. </p>
+              </div>
+            </div>
+            <div class="col-4 p-2">
+              <img src="poze/building-1080591_1280.jpg" class="img-fluid"
+                alt="Eirik este fericit deoarece a terminat de construit o casă">
+            </div>
+            <div class="row">
+              <div class="col-8 t">
+                <div class="d-flex h-100 flex-column justify-content-center">
+                  <p class="lead"> Sunt specializat ca arhitect de design și servicii complete pentru reședințe noi,
+                    completări de case și
+                    clădiri comerciale. De asemenea, ofer servicii suplimentare precum obținerea de autorizații, și
+                    supraveghere arhitecturală. Dacă vă place ceea ce fac, contactați-mă pentru a discuta noul
+                    nostru mare proiect!</p>
+                </div>
+              </div>
+              <div class="col-4 order-first">
+                <img src="poze/pexels-photo-1109541.jpeg" class="img-fluid" alt="Eirik face un plan grafic">
+              </div>
+            </div>
+      </section>
+     
+      <section id="Servicii" class="pt-md-1">
+        <h2 class="display-3 text-center my-5 text-danger text-uppercase">Servicii</h2>
+        <div class="container">
+          <div class="row gy-3">
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="poze/work2.jpg" class="card-img-top"
+                  alt="Un birou cu multe obiecte pentru desen împreună cu o casă mică de jucărie 3d">
+                <div class="card-body">
+                  <h3 class="card-title">Temă de proiectare</h3>
+                  <p class="card-text">Creăm o listă de dorințe și o ierarhie a cerințelor de design interior împreună cu
+                    clientul. Compilăm
+                    fotografii cu setări, elemente și detalii care ne inspiră într-un fișier de documentare.
+                    Astfel, obținem o perspectivă asupra unei estetice comune de design interior.
+                    Vă oferim ideea de amenajare împreună cu un software special, care este un portofoliu de imagini,
+                    texturi și culori.
+                  </p>
+                  <span class="badge rounded-pill text-bg-success">300 RON</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="poze/work1.jpg" class="card-img-top" alt="Tabletă grafică pentru design 3d">
+                <div class="card-body">
+                  <h3 class="card-title">Planuri 3D</h3>
+                  <p class="card-text">Utilizăm o serie de tehnici 3D pentru a ajuta la explicarea propunerii de proiectare,
+                    astfel încât chiar și cel mai „neinformat” client să poată dezvolta o imagine mentală precisă a
+                    produsului finit. Mobilierul și obiectele oferite în proiectul de amenajare se află în listele de
+                    siguranță, sunt relevante pentru context și se încadrează în buget. Tot ceea ce ne imaginăm este
+                    fezabil.</p>
+                  <span class="badge rounded-pill text-bg-success">1000 RON</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="poze/design0.jpg" class="card-img-top"
+                  alt="Eirik Arnesen cu un portofoliu plin de proiecte de design">
+                <div class="card-body">
+                  <h3 class="card-title">Management de proiect</h3>
+                  <p class="card-text">Costul proiectului de design interior include suport telefonic sau personal, după
+                    caz, în fazele
+                    cruciale ale execuției. Proiectul poate fi finalizat și urmărit cu ușurință fără implicarea
+                    proiectantului datorită dosarului tehnic și de achiziție cuprinzător și detaliat. Desigur, selectăm
+                    împreună echipele de execuție a clădirii și a mobilierului sau vi le sugerăm în funcție de performanța
+                    și seriozitatea lor anterioară.</p>
+                  <span class="badge rounded-pill text-bg-success">500 RON</span>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="dark-bg mt-5 " id="avantaje">
+        <div class="container">
+          <div class="text-light d-flex flex-column h-100 justify-content-center">
+            <h2 class="text-danger text-uppercase displa display-3">Avantaje și beneficii</h2>
+            <ul>
+              <li>Aveți șansa de a vizualiza proiectul în trei dimensiuni înainte de a fi finalizat datorită software-ului
+                specific utilizat pentru sarcină.</li>
+              <li>Vei economisi timp și bani, întrucât noi vom propune soluțiile tehnice pe șantier</li>
+              <li>Metoda noastră simplă și fără probleme ne va permite să vă personalizăm complet spațiul, deoarece
+                înțelegem cât de esențial este timpul dumneavoastră.</li>
+              <li>Bugetul tău este pus pe primul loc, acesta e controlat strict, proiectul nedepășind deloc prețul
+                stabilit </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="lucrari">
+        <div class="container mt-5">
+          <h2 class="text-danger text-uppercase display-3">Lucrări</h2>
+          <div class="row">
+            <div class="col-6 col-md-4">
+              <div class="containerGallery">
+                <img class="imageGallery rounded img-fluid shadow h-75 mb-4" src="poze/architecture- - Copy.jpg"
+                  alt="Sufragerie modernă open space cu tematică albă">
+                <div class="overlayGallery rounded">
+                  <p class="textGallery">Sufragerie modernă open space cu tematică albă</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="containerGallery">
+                <img class="imageGallery rounded img-fluid shadow h-75 mb-4" src="poze/interior-living.jpg"
+                  alt="Sufragerie open space cu două balcoane">
+                <div class="overlayGallery rounded">
+                  <p class="textGallery">Sufragerie open space cu două balcoane</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="containerGallery">
+                <img class="imageGallery rounded img-fluid shadow h-75 mb-4"
+                  src="poze/living-room-couch-interior-room-584399.jpeg"
+                  alt="Sufragerie cu design rustic, cu perete din cărămidă albă">
+                <div class="overlayGallery rounded">
+                  <p class="textGallery">Sufragerie cu design rustic, cu perete din cărămidă albă</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="containerGallery">
+                <img class="imageGallery rounded img-fluid shadow h-75 mb-4" src="poze/bucatarie (1) - Copy.jpg"
+                  alt="Bucătărie modernă realizată din lemn de stejar în combinație cu lemn abachi tropical.">
+                <div class="overlayGallery rounded">
+                  <p class="textGallery">Bucătărie modernă realizată din lemn de stejar în combinație cu lemn abachi
+                    tropical</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="containerGallery">
+                <img class="imageGallery rounded img-fluid shadow h-75 mb-4" src="poze/bucatarie (2) - Copy.jpg"
+                  alt="Sufragerie modernă open space cu loc de luat masa">
+                <div class="overlayGallery rounded">
+                  <p class="textGallery">Sufragerie modernă open space cu loc de luat masa</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="containerGallery">
+                <img class="imageGallery rounded img-fluid shadow h-75 mb-4" src="poze/bucatarie (3) - Copy.jpg"
+                  alt="Bucătărie de lux realizată din lemn masiv alb">
+                <div class="overlayGallery rounded">
+                  <p class="textGallery">Bucătărie de lux realizată din lemn masiv alba</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="containerGallery">
+                <img class="imageGallery rounded img-fluid shadow h-75 mb-4" src="poze/bathroom.jpg"
+                  alt="Baie modernă, cu mobilă minimalistă de culoare alb pergament">
+                <div class="overlayGallery rounded">
+                  <p class="textGallery">Baie modernă, cu mobilă minimalistă de culoare alb pergament</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="containerGallery">
+                <img class="imageGallery rounded img-fluid shadow h-75 mb-4" src="poze/exterior-3558996 - Copy.jpg"
+                  alt="Imboil spațios modern, nuanță de fildeș, situat pe 3 nivele">
+                <div class="overlayGallery rounded">
+                  <p class="textGallery">Imboil spațios modern, nuanță de fildeș, situat pe 3 nivele</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="containerGallery">
+                <img class="imageGallery rounded img-fluid shadow h-75 mb-4" src="poze/single-family-home - Copy.jpg"
+                  alt="Vilă de culoare albă și gri, situată pe două nivele">
+                <div class="overlayGallery rounded">
+                  <p class="textGallery">Vilă de culoare albă și gri, situată pe două nivele</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="idapproach" class="generic">
+        <div class="container">
+          <h2 class="display-3 text-danger text-uppercase mb-5">Tu de care ai nevoie ?</h2>
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+              <div class="card bg-light border-0 mb-5">
+                <img src="poze/pexels-photo-276267.jpeg" alt="O paletă cu multe noanțe de culori"
+                  class="card-img-top rounded-0">
+                <div class="card-body">
+                  <h3 class="lead text-danger text-uppercase mb-4">Design interior</h3>
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Ce înseamnă
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <p>Dincolo de înfrumusețarea spațiului în care locuiești sau lucrezi, designul interior e menit să
+                            te facă
+                            să te simți într-un anumit fel.
+    
+                            La finalul zilei, locul în care ești s-ar putea să facă diferența, așa că impreuna cu mine,
+                            putem da
+                            viață unui spațiu dedicat nevoilor tale; generăm idei și materializăm împreună visurile, totul
+                            ancorat
+                            în eleganță și confort.
+    
+                            Designul interior este atât despre cum arată o încăpere, cât și despre cum te face să te simți.
+                            Esteticul se îmbină armonios cu familiaritatea și confortul, iar așa ia naștere sentimentul că
+                            ești la
+                            locul tău.</P>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="card bg-light border-0">
+                <img src="poze/buildings-1398038_1920.jpg"
+                  alt="Un desen cu multe cladiri desenate amuzant cu foarte multe culori vii"
+                  class="card-img-top rounded-0">
+                <div class="card-body">
+                  <h3 class="lead text-danger text-uppercase mb-4">Design Exterior</h3>
+                  <div class="accordion accordion-flush" id="accordionFlushExample2">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                          Ce înseamnă
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample2">
+                        <div class="accordion-body">
+                          <p>Design-ul exterior poate însemna mai mult decât simpla înfățișare a casei din afară. Modul în
+                            care
+                            locuința ta arată te reprezintă pe tine și împarte emoție persoanelor ce vor trece prin fața
+                            casei tale.
+                            Un design îngrijit al casei îți va oferi senzația de fericire
+                            și siguranță, un spațiu plăcut, călduros si primitor.
+                            De asemenea, design-ul exterior include si curtea din fata si din spate a casei. Considerăm că
+                            natura
+                            are un loc important in viața fiecărei persoane și o casă modernă nu are același farmec fără ea.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+    
+      <section class="dark-bg mt-5" id="contact">
+        <div class="container pb-5">
+          <div class=" text-light d-flex flex-column h-100 ">
+            <h2 class="display-3 text-danger text-uppercase ">Sediu</h2>
+            <p>Am și un sediu fizic, unde ne putem întalnii de asemenea <br>
+              Adresa: Cluj, Cluj-Napoca, Strada General Traian Moșoiu 71, Cluj-Napoca 400132 <br>
+              Interval orar: Luni-Vineri, 10:00-16:00</p>
+    
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.6472333814754!2d23.605158615601685!3d46.771849479138204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c2321652047%3A0x26c7a15ac3b3be71!2sCollege%20of%20Political%2C%20Administrative%20and%20Communication%20Sciences!5e0!3m2!1sen!2sro!4v1669114459354!5m2!1sen!2sro"
+              width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container-fluid bg-dark text-center py-4 lead text-light mt-5">
+          NO &copy; 2023 Eirik Arnesen
+          <a class="logo">
+            <img src="poze/logo1.png" alt="Logo-ul firmei lui Eirik Arnesen">
+          </a>
+          <ul class="nav justify-content-center list-unstyled d-flex mt-2">
+            <li class="me-4">
+              <a href="https://facebook.com/" target="_blank">
+                <img src="poze/facebook.png" alt="icoană facebook" />
+              </a>
+            </li>
+            <li class="me-4">
+              <a href="https://instagram.com/" target="_blank">
+                <img src="poze/instagram (1).png" alt="icoană reddit" />
+              </a>
+            </li>
+            <li class="me-4">
+              <a href="https://youtube.com/" target="_blank">
+                <img src="poze/youtube (1).png" alt="icoană youtube" />
+              </a>
+            </li>
+            <li>
+              <a href="https://reddit.com/" target="_blank">
+                <img src="poze/reddit.png" alt="icoană reddit" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    </body>
+    
+    </html>
